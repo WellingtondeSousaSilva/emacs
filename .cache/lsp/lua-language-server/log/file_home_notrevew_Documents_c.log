@@ -1,0 +1,1069 @@
+[10:01:44.041][info] [#0:/home/notrevew/.emacs.d/.cache/lsp/lua-language-server/main.lua:66]: Lua Lsp startup, root: 	/home/notrevew/.emacs.d/.cache/lsp/lua-language-server
+[10:01:44.058][info] [#0:/home/notrevew/.emacs.d/.cache/lsp/lua-language-server/main.lua:67]: ROOT:	/home/notrevew/.emacs.d/.cache/lsp/lua-language-server
+[10:01:44.058][info] [#0:/home/notrevew/.emacs.d/.cache/lsp/lua-language-server/main.lua:68]: LOGPATH:	/home/notrevew/.emacs.d/.cache/lsp/lua-language-server/log
+[10:01:44.058][info] [#0:/home/notrevew/.emacs.d/.cache/lsp/lua-language-server/main.lua:69]: METAPATH:	/home/notrevew/.emacs.d/.cache/lsp/lua-language-server/meta
+[10:01:44.077][info] [#0:/home/notrevew/.emacs.d/.cache/lsp/lua-language-server/main.lua:70]: VERSION:	3.6.18
+[10:01:44.398][info] [#0:script/service/service.lua:144]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 2.111 MB
+        # 00 : 2.111 MB
+        # 01 : 0.000 MB
+        # 02 : 0.000 MB
+        # 03 : 0.000 MB
+        # 04 : 0.000 MB
+    --------------- Coroutine ---------------
+        Total:     0
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      0
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[10:01:44.426][info] [#0:script/client.lua:657]: Client init	{
+  capabilities = {
+    general = {
+      positionEncodings = { "utf-32", "utf-16" }
+    },
+    textDocument = {
+      callHierarchy = {
+        dynamicRegistration = false
+      },
+      codeAction = {
+        codeActionLiteralSupport = {
+          codeActionKind = {
+            valueSet = { "", "quickfix", "refactor", "refactor.extract", "refactor.inline", "refactor.rewrite", "source", "source.organizeImports" }
+          }
+        },
+        dataSupport = true,
+        dynamicRegistration = true,
+        isPreferredSupport = true,
+        resolveSupport = {
+          properties = { "edit", "command" }
+        }
+      },
+      completion = {
+        completionItem = {
+          deprecatedSupport = true,
+          documentationFormat = { "markdown", "plaintext" },
+          insertReplaceSupport = true,
+          insertTextModeSupport = {
+            valueSet = { 1, 2 }
+          },
+          resolveAdditionalTextEditsSupport = true,
+          resolveSupport = {
+            properties = { "documentation", "detail", "additionalTextEdits", "command" }
+          },
+          snippetSupport = false
+        },
+        contextSupport = true,
+        dynamicRegistration = true
+      },
+      declaration = {
+        dynamicRegistration = true,
+        linkSupport = true
+      },
+      definition = {
+        dynamicRegistration = true,
+        linkSupport = true
+      },
+      documentLink = {
+        dynamicRegistration = true,
+        tooltipSupport = true
+      },
+      documentSymbol = {
+        hierarchicalDocumentSymbolSupport = true,
+        symbolKind = {
+          valueSet = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26 }
+        }
+      },
+      foldingRange = {
+        dynamicRegistration = true
+      },
+      formatting = {
+        dynamicRegistration = true
+      },
+      hover = {
+        contentFormat = { "markdown", "plaintext" },
+        dynamicRegistration = true
+      },
+      implementation = {
+        dynamicRegistration = true,
+        linkSupport = true
+      },
+      linkedEditingRange = {
+        dynamicRegistration = true
+      },
+      onTypeFormatting = {
+        dynamicRegistration = true
+      },
+      publishDiagnostics = {
+        relatedInformation = true,
+        tagSupport = {
+          valueSet = { 1, 2 }
+        },
+        versionSupport = true
+      },
+      rangeFormatting = {
+        dynamicRegistration = true
+      },
+      references = {
+        dynamicRegistration = true
+      },
+      rename = {
+        dynamicRegistration = true,
+        prepareSupport = true
+      },
+      selectionRange = {
+        dynamicRegistration = true
+      },
+      signatureHelp = {
+        dynamicRegistration = true,
+        signatureInformation = {
+          parameterInformation = {
+            labelOffsetSupport = true
+          }
+        }
+      },
+      synchronization = {
+        didSave = true,
+        willSave = true,
+        willSaveWaitUntil = true
+      },
+      typeDefinition = {
+        dynamicRegistration = true,
+        linkSupport = true
+      },
+      typeHierarchy = {
+        dynamicRegistration = true
+      }
+    },
+    window = {
+      showDocument = {
+        support = true
+      },
+      workDoneProgress = true
+    },
+    workspace = {
+      applyEdit = true,
+      codeLens = {
+        refreshSupport = true
+      },
+      configuration = true,
+      didChangeWatchedFiles = {
+        dynamicRegistration = true
+      },
+      executeCommand = {
+        dynamicRegistration = false
+      },
+      fileOperations = {
+        didCreate = false,
+        didDelete = false,
+        didRename = true,
+        willCreate = false,
+        willDelete = false,
+        willRename = true
+      },
+      symbol = {
+        symbolKind = {
+          valueSet = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26 }
+        }
+      },
+      workspaceEdit = {
+        documentChanges = true,
+        resourceOperations = { "create", "rename", "delete" }
+      },
+      workspaceFolders = true
+    }
+  },
+  clientInfo = {
+    name = "emacs",
+    version = "GNU Emacs 28.2 (build 1, x86_64-pc-linux-gnu, GTK+ Version 3.24.36, cairo version 1.17.6)\n of 2023-01-02"
+  },
+  processId = 1183,
+  rootPath = "/home/notrevew/Documents/c",
+  rootUri = "file:///home/notrevew/Documents/c",
+  workDoneToken = "1"
+}
+[10:01:44.439][info] [#0:script/language.lua:137]: VSC language: nil
+[10:01:44.440][info] [#0:script/language.lua:138]: LS  language: en-us
+[10:01:44.440][info] [#0:script/workspace/workspace.lua:38]: Workspace init root: 	file:///home/notrevew/Documents/c
+[10:01:44.440][info] [#0:script/workspace/workspace.lua:42]: Log path: 	/home/notrevew/.emacs.d/.cache/lsp/lua-language-server/log/file_home_notrevew_Documents_c.log
+[10:01:44.442][info] [#0:script/workspace/workspace.lua:48]: Workspace create: 	file:///home/notrevew/Documents/c
+[10:01:44.771][info] [#0:script/provider/provider.lua:46]: Load config from client	file:///home/notrevew/Documents/c
+[10:01:44.771][info] [#0:script/provider/provider.lua:47]: {
+  Lua = {
+    color = {
+      mode = "Semantic"
+    },
+    completion = {
+      callSnippet = "Disable",
+      displayContext = 6,
+      enable = true,
+      keywordSnippet = "Replace",
+      workspaceWord = true
+    },
+    develop = {
+      debuggerPort = 11412,
+      debuggerWait = false,
+      enable = false
+    },
+    diagnostics = {
+      enable = true,
+      workspaceDelay = 0,
+      workspaceRate = 100
+    },
+    hint = {
+      enable = false,
+      paramName = true,
+      paramType = true
+    },
+    hover = {
+      enable = true,
+      fieldInfer = 3000,
+      previewFields = 100,
+      viewNumber = true,
+      viewString = true,
+      viewStringMax = 1000
+    },
+    intelliSense = {
+      searchDepth = 0
+    },
+    runtime = {
+      fileEncoding = "utf8",
+      path = { "?.lua", "?/init.lua", "?/?.lua" },
+      version = "Lua 5.4"
+    },
+    signatureHelp = {
+      enable = true
+    },
+    telemetry = {
+      enable = false
+    },
+    window = {
+      progressBar = true,
+      statusBar = true
+    },
+    workspace = {
+      ignoreDir = { ".vscode" },
+      ignoreSubmodules = true,
+      maxPreload = 1000,
+      preloadFileSize = 100,
+      useGitIgnore = true
+    }
+  },
+  ["files.associations"] = false,
+  ["files.exclude"] = false
+}
+[10:01:44.772][info] [#0:script/provider/completion.lua:43]: Enable completion.
+[10:01:44.874][info] [#0:script/provider/provider.lua:61]: Load config from client	fallback
+[10:01:44.877][info] [#0:script/provider/provider.lua:62]: {
+  Lua = {
+    color = {
+      mode = "Semantic"
+    },
+    completion = {
+      callSnippet = "Disable",
+      displayContext = 6,
+      enable = true,
+      keywordSnippet = "Replace",
+      workspaceWord = true
+    },
+    develop = {
+      debuggerPort = 11412,
+      debuggerWait = false,
+      enable = false
+    },
+    diagnostics = {
+      enable = true,
+      workspaceDelay = 0,
+      workspaceRate = 100
+    },
+    hint = {
+      enable = false,
+      paramName = true,
+      paramType = true
+    },
+    hover = {
+      enable = true,
+      fieldInfer = 3000,
+      previewFields = 100,
+      viewNumber = true,
+      viewString = true,
+      viewStringMax = 1000
+    },
+    intelliSense = {
+      searchDepth = 0
+    },
+    runtime = {
+      fileEncoding = "utf8",
+      path = { "?.lua", "?/init.lua", "?/?.lua" },
+      version = "Lua 5.4"
+    },
+    signatureHelp = {
+      enable = true
+    },
+    telemetry = {
+      enable = false
+    },
+    window = {
+      progressBar = true,
+      statusBar = true
+    },
+    workspace = {
+      ignoreDir = { ".vscode" },
+      ignoreSubmodules = true,
+      maxPreload = 1000,
+      preloadFileSize = 100,
+      useGitIgnore = true
+    }
+  },
+  ["files.associations"] = false,
+  ["files.exclude"] = false
+}
+[10:01:44.878][info] [#0:script/library.lua:212]: Init builtin library at:	file:///home/notrevew/Documents/c
+[10:01:45.038][info] [#0:script/plugin.lua:86]: plugin path:	/home/notrevew/Documents/c
+[10:01:45.038][warn] [#0:script/plugin.lua:101]: plugin not found:	/home/notrevew/Documents/c
+[10:01:45.038][info] [#0:script/library.lua:212]: Init builtin library at:	nil
+[10:01:45.095][info] [#0:script/workspace/workspace.lua:322]: Preload start:	file:///home/notrevew/Documents/c
+[10:01:45.106][info] [#0:script/workspace/workspace.lua:328]: Scan files at:	file:///home/notrevew/Documents/c
+[10:01:45.107][info] [#0:script/workspace/workspace.lua:322]: Preload start:	<fallback>
+[10:01:45.117][info] [#0:script/workspace/workspace.lua:351]: Scan library at:	file:///home/notrevew/.emacs.d/.cache/lsp/lua-language-server/meta/Lua%205.4%20en-us%20utf8/table.lua
+[10:01:45.121][info] [#0:script/workspace/workspace.lua:351]: Scan library at:	file:///home/notrevew/.emacs.d/.cache/lsp/lua-language-server/meta/Lua%205.4%20en-us%20utf8/builtin.lua
+[10:01:45.122][info] [#0:script/workspace/workspace.lua:351]: Scan library at:	file:///home/notrevew/.emacs.d/.cache/lsp/lua-language-server/meta/Lua%205.4%20en-us%20utf8/debug.lua
+[10:01:45.122][info] [#0:script/workspace/workspace.lua:351]: Scan library at:	file:///home/notrevew/.emacs.d/.cache/lsp/lua-language-server/meta/Lua%205.4%20en-us%20utf8/os.lua
+[10:01:45.123][info] [#0:script/workspace/workspace.lua:351]: Scan library at:	file:///home/notrevew/.emacs.d/.cache/lsp/lua-language-server/meta/Lua%205.4%20en-us%20utf8/utf8.lua
+[10:01:45.124][info] [#0:script/workspace/workspace.lua:351]: Scan library at:	file:///home/notrevew/.emacs.d/.cache/lsp/lua-language-server/meta/Lua%205.4%20en-us%20utf8/coroutine.lua
+[10:01:45.124][info] [#0:script/workspace/workspace.lua:351]: Scan library at:	file:///home/notrevew/.emacs.d/.cache/lsp/lua-language-server/meta/Lua%205.4%20en-us%20utf8/table.lua
+[10:01:45.124][info] [#0:script/workspace/workspace.lua:351]: Scan library at:	file:///home/notrevew/.emacs.d/.cache/lsp/lua-language-server/meta/Lua%205.4%20en-us%20utf8/package.lua
+[10:01:45.125][info] [#0:script/workspace/workspace.lua:351]: Scan library at:	file:///home/notrevew/.emacs.d/.cache/lsp/lua-language-server/meta/Lua%205.4%20en-us%20utf8/builtin.lua
+[10:01:45.126][info] [#0:script/workspace/workspace.lua:351]: Scan library at:	file:///home/notrevew/.emacs.d/.cache/lsp/lua-language-server/meta/Lua%205.4%20en-us%20utf8/basic.lua
+[10:01:45.126][info] [#0:script/workspace/workspace.lua:351]: Scan library at:	file:///home/notrevew/.emacs.d/.cache/lsp/lua-language-server/meta/Lua%205.4%20en-us%20utf8/debug.lua
+[10:01:45.127][info] [#0:script/workspace/workspace.lua:351]: Scan library at:	file:///home/notrevew/.emacs.d/.cache/lsp/lua-language-server/meta/Lua%205.4%20en-us%20utf8/math.lua
+[10:01:45.127][info] [#0:script/workspace/workspace.lua:351]: Scan library at:	file:///home/notrevew/.emacs.d/.cache/lsp/lua-language-server/meta/Lua%205.4%20en-us%20utf8/os.lua
+[10:01:45.128][info] [#0:script/workspace/workspace.lua:351]: Scan library at:	file:///home/notrevew/.emacs.d/.cache/lsp/lua-language-server/meta/Lua%205.4%20en-us%20utf8/string.lua
+[10:01:45.128][info] [#0:script/workspace/workspace.lua:351]: Scan library at:	file:///home/notrevew/.emacs.d/.cache/lsp/lua-language-server/meta/Lua%205.4%20en-us%20utf8/utf8.lua
+[10:01:45.128][info] [#0:script/workspace/workspace.lua:351]: Scan library at:	file:///home/notrevew/.emacs.d/.cache/lsp/lua-language-server/meta/Lua%205.4%20en-us%20utf8/io.lua
+[10:01:45.129][info] [#0:script/workspace/workspace.lua:351]: Scan library at:	file:///home/notrevew/.emacs.d/.cache/lsp/lua-language-server/meta/Lua%205.4%20en-us%20utf8/coroutine.lua
+[10:01:45.129][info] [#0:script/workspace/workspace.lua:351]: Scan library at:	file:///home/notrevew/.emacs.d/.cache/lsp/lua-language-server/meta/Lua%205.4%20en-us%20utf8/package.lua
+[10:01:45.129][info] [#0:script/workspace/workspace.lua:351]: Scan library at:	file:///home/notrevew/.emacs.d/.cache/lsp/lua-language-server/meta/Lua%205.4%20en-us%20utf8/basic.lua
+[10:01:45.130][info] [#0:script/workspace/workspace.lua:351]: Scan library at:	file:///home/notrevew/.emacs.d/.cache/lsp/lua-language-server/meta/Lua%205.4%20en-us%20utf8/math.lua
+[10:01:45.130][info] [#0:script/workspace/workspace.lua:351]: Scan library at:	file:///home/notrevew/.emacs.d/.cache/lsp/lua-language-server/meta/Lua%205.4%20en-us%20utf8/string.lua
+[10:01:45.131][info] [#0:script/workspace/workspace.lua:351]: Scan library at:	file:///home/notrevew/.emacs.d/.cache/lsp/lua-language-server/meta/Lua%205.4%20en-us%20utf8/io.lua
+[10:01:45.232][info] [#0:script/workspace/workspace.lua:377]: Found 11 files at:	<fallback>
+[10:01:45.232][info] [#0:script/workspace/loading.lua:161]: Load files from disk:	<fallback>
+[10:01:45.232][info] [#0:script/workspace/workspace.lua:377]: Found 12 files at:	file:///home/notrevew/Documents/c
+[10:01:45.232][info] [#0:script/workspace/loading.lua:161]: Load files from disk:	file:///home/notrevew/Documents/c
+[10:01:45.236][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/notrevew/.emacs.d/.cache/lsp/lua-language-server/meta/Lua%205.4%20en-us%20utf8/io.lua , size = 6.364 KB
+[10:01:45.255][info] [#0:script/workspace/loading.lua:113]: ++++As library of:	file:///home/notrevew/.emacs.d/.cache/lsp/lua-language-server/meta/Lua%205.4%20en-us%20utf8/io.lua
+[10:01:45.256][info] [#0:script/workspace/loading.lua:98]: Skip loaded file: file:///home/notrevew/.emacs.d/.cache/lsp/lua-language-server/meta/Lua%205.4%20en-us%20utf8/io.lua
+[10:01:45.259][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/notrevew/.emacs.d/.cache/lsp/lua-language-server/meta/Lua%205.4%20en-us%20utf8/string.lua , size = 6.302 KB
+[10:01:45.281][info] [#0:script/workspace/loading.lua:113]: ++++As library of:	file:///home/notrevew/.emacs.d/.cache/lsp/lua-language-server/meta/Lua%205.4%20en-us%20utf8/string.lua
+[10:01:45.281][info] [#0:script/workspace/loading.lua:89]: Skip loaded file: file:///home/notrevew/.emacs.d/.cache/lsp/lua-language-server/meta/Lua%205.4%20en-us%20utf8/string.lua
+[10:01:45.281][info] [#0:script/workspace/loading.lua:113]: ++++As library of:	file:///home/notrevew/.emacs.d/.cache/lsp/lua-language-server/meta/Lua%205.4%20en-us%20utf8/string.lua
+[10:01:45.282][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/notrevew/.emacs.d/.cache/lsp/lua-language-server/meta/Lua%205.4%20en-us%20utf8/math.lua , size = 8.731 KB
+[10:01:45.307][info] [#0:script/workspace/loading.lua:113]: ++++As library of:	file:///home/notrevew/.emacs.d/.cache/lsp/lua-language-server/meta/Lua%205.4%20en-us%20utf8/math.lua
+[10:01:45.307][info] [#0:script/workspace/loading.lua:98]: Skip loaded file: file:///home/notrevew/.emacs.d/.cache/lsp/lua-language-server/meta/Lua%205.4%20en-us%20utf8/math.lua
+[10:01:45.307][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/notrevew/.emacs.d/.cache/lsp/lua-language-server/meta/Lua%205.4%20en-us%20utf8/basic.lua , size = 14.160 KB
+[10:01:45.341][info] [#0:script/workspace/loading.lua:113]: ++++As library of:	file:///home/notrevew/.emacs.d/.cache/lsp/lua-language-server/meta/Lua%205.4%20en-us%20utf8/basic.lua
+[10:01:45.341][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/notrevew/.emacs.d/.cache/lsp/lua-language-server/meta/Lua%205.4%20en-us%20utf8/package.lua , size = 2.944 KB
+[10:01:45.347][info] [#0:script/workspace/loading.lua:113]: ++++As library of:	file:///home/notrevew/.emacs.d/.cache/lsp/lua-language-server/meta/Lua%205.4%20en-us%20utf8/package.lua
+[10:01:45.347][info] [#0:script/workspace/loading.lua:98]: Skip loaded file: file:///home/notrevew/.emacs.d/.cache/lsp/lua-language-server/meta/Lua%205.4%20en-us%20utf8/package.lua
+[10:01:45.347][info] [#0:script/workspace/loading.lua:98]: Skip loaded file: file:///home/notrevew/.emacs.d/.cache/lsp/lua-language-server/meta/Lua%205.4%20en-us%20utf8/basic.lua
+[10:01:45.348][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/notrevew/.emacs.d/.cache/lsp/lua-language-server/meta/Lua%205.4%20en-us%20utf8/coroutine.lua , size = 2.590 KB
+[10:01:45.355][info] [#0:script/workspace/loading.lua:113]: ++++As library of:	file:///home/notrevew/.emacs.d/.cache/lsp/lua-language-server/meta/Lua%205.4%20en-us%20utf8/coroutine.lua
+[10:01:45.356][info] [#0:script/workspace/loading.lua:98]: Skip loaded file: file:///home/notrevew/.emacs.d/.cache/lsp/lua-language-server/meta/Lua%205.4%20en-us%20utf8/coroutine.lua
+[10:01:45.356][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/notrevew/.emacs.d/.cache/lsp/lua-language-server/meta/Lua%205.4%20en-us%20utf8/utf8.lua , size = 2.386 KB
+[10:01:45.363][info] [#0:script/workspace/loading.lua:113]: ++++As library of:	file:///home/notrevew/.emacs.d/.cache/lsp/lua-language-server/meta/Lua%205.4%20en-us%20utf8/utf8.lua
+[10:01:45.363][info] [#0:script/workspace/loading.lua:98]: Skip loaded file: file:///home/notrevew/.emacs.d/.cache/lsp/lua-language-server/meta/Lua%205.4%20en-us%20utf8/utf8.lua
+[10:01:45.363][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/notrevew/.emacs.d/.cache/lsp/lua-language-server/meta/Lua%205.4%20en-us%20utf8/os.lua , size = 4.347 KB
+[10:01:45.375][info] [#0:script/workspace/loading.lua:113]: ++++As library of:	file:///home/notrevew/.emacs.d/.cache/lsp/lua-language-server/meta/Lua%205.4%20en-us%20utf8/os.lua
+[10:01:45.375][info] [#0:script/workspace/loading.lua:98]: Skip loaded file: file:///home/notrevew/.emacs.d/.cache/lsp/lua-language-server/meta/Lua%205.4%20en-us%20utf8/os.lua
+[10:01:45.375][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/notrevew/.emacs.d/.cache/lsp/lua-language-server/meta/Lua%205.4%20en-us%20utf8/debug.lua , size = 7.637 KB
+[10:01:45.406][info] [#0:script/workspace/loading.lua:113]: ++++As library of:	file:///home/notrevew/.emacs.d/.cache/lsp/lua-language-server/meta/Lua%205.4%20en-us%20utf8/debug.lua
+[10:01:45.406][info] [#0:script/workspace/loading.lua:98]: Skip loaded file: file:///home/notrevew/.emacs.d/.cache/lsp/lua-language-server/meta/Lua%205.4%20en-us%20utf8/debug.lua
+[10:01:45.406][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/notrevew/.emacs.d/.cache/lsp/lua-language-server/meta/Lua%205.4%20en-us%20utf8/builtin.lua , size = 0.302 KB
+[10:01:45.409][info] [#0:script/workspace/loading.lua:113]: ++++As library of:	file:///home/notrevew/.emacs.d/.cache/lsp/lua-language-server/meta/Lua%205.4%20en-us%20utf8/builtin.lua
+[10:01:45.409][info] [#0:script/workspace/loading.lua:98]: Skip loaded file: file:///home/notrevew/.emacs.d/.cache/lsp/lua-language-server/meta/Lua%205.4%20en-us%20utf8/builtin.lua
+[10:01:45.409][info] [#0:script/workspace/loading.lua:101]: Preload file at: file:///home/notrevew/.emacs.d/.cache/lsp/lua-language-server/meta/Lua%205.4%20en-us%20utf8/table.lua , size = 4.230 KB
+[10:01:45.420][info] [#0:script/workspace/loading.lua:113]: ++++As library of:	file:///home/notrevew/.emacs.d/.cache/lsp/lua-language-server/meta/Lua%205.4%20en-us%20utf8/table.lua
+[10:01:45.421][info] [#0:script/workspace/loading.lua:89]: Skip loaded file: file:///home/notrevew/.emacs.d/.cache/lsp/lua-language-server/meta/Lua%205.4%20en-us%20utf8/table.lua
+[10:01:45.421][info] [#0:script/workspace/loading.lua:113]: ++++As library of:	file:///home/notrevew/.emacs.d/.cache/lsp/lua-language-server/meta/Lua%205.4%20en-us%20utf8/table.lua
+[10:01:45.421][info] [#0:script/workspace/loading.lua:173]: Loaded files takes [0.187] sec: <fallback>
+[10:01:45.421][info] [#0:script/workspace/loading.lua:182]: Compile files takes [0.000] sec: <fallback>
+[10:01:45.421][info] [#0:script/workspace/loading.lua:183]: Loaded finish:	<fallback>
+[10:01:45.421][info] [#0:script/workspace/workspace.lua:379]: Preload finish at:	<fallback>
+[10:01:45.690][info] [#0:script/workspace/loading.lua:89]: Skip loaded file: file:///home/notrevew/Documents/c/c.lua
+[10:01:45.702][info] [#0:script/workspace/loading.lua:173]: Loaded files takes [0.241] sec: file:///home/notrevew/Documents/c
+[10:01:45.703][info] [#0:script/workspace/loading.lua:182]: Compile files takes [0.001] sec: file:///home/notrevew/Documents/c
+[10:01:45.703][info] [#0:script/workspace/loading.lua:183]: Loaded finish:	file:///home/notrevew/Documents/c
+[10:01:45.703][info] [#0:script/workspace/workspace.lua:379]: Preload finish at:	file:///home/notrevew/Documents/c
+[10:01:45.737][info] [#0:script/provider/diagnostic.lua:557]: Diagnostics scope [file:///home/notrevew/Documents/c], files count:[12]
+[10:01:45.790][info] [#0:script/provider/diagnostic.lua:574]: Diagnostics scope [file:///home/notrevew/Documents/c] finished, takes [0.034] sec.
+[10:02:07.001][info] [#0:script/provider/diagnostic.lua:171]: clearDiagnostics	file:///home/notrevew/Documents/c/c.lua
+[10:02:47.446][info] [#0:script/workspace/workspace.lua:282]: Scan files at:	file:///home/notrevew/Documents/c/%23teste.c%23
+[10:02:47.447][info] [#0:script/workspace/workspace.lua:282]: Scan files at:	file:///home/notrevew/Documents/c/%23c.lua%23
+[10:02:47.450][info] [#0:script/workspace/loading.lua:161]: Load files from disk:	file:///home/notrevew/Documents/c/%23teste.c%23
+[10:02:47.450][info] [#0:script/workspace/loading.lua:173]: Loaded files takes [0.000] sec: file:///home/notrevew/Documents/c/%23teste.c%23
+[10:02:47.450][info] [#0:script/workspace/loading.lua:182]: Compile files takes [0.000] sec: file:///home/notrevew/Documents/c/%23teste.c%23
+[10:02:47.450][info] [#0:script/workspace/loading.lua:183]: Loaded finish:	file:///home/notrevew/Documents/c/%23teste.c%23
+[10:02:47.451][info] [#0:script/workspace/loading.lua:161]: Load files from disk:	file:///home/notrevew/Documents/c/%23c.lua%23
+[10:02:47.452][info] [#0:script/workspace/loading.lua:173]: Loaded files takes [0.000] sec: file:///home/notrevew/Documents/c/%23c.lua%23
+[10:02:47.452][info] [#0:script/workspace/loading.lua:182]: Compile files takes [0.000] sec: file:///home/notrevew/Documents/c/%23c.lua%23
+[10:02:47.452][info] [#0:script/workspace/loading.lua:183]: Loaded finish:	file:///home/notrevew/Documents/c/%23c.lua%23
+[10:11:44.118][info] [#0:script/service/service.lua:144]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 8.506 MB
+        # 00 : 8.186 MB
+        # 01 : 0.080 MB
+        # 02 : 0.045 MB
+        # 03 : 0.081 MB
+        # 04 : 0.114 MB
+    --------------- Coroutine ---------------
+        Total:     381
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      381
+    --------------- Cache ---------------
+        Total: 6
+        Dead:  5
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[10:21:44.773][info] [#0:script/service/service.lua:144]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 9.140 MB
+        # 00 : 8.820 MB
+        # 01 : 0.080 MB
+        # 02 : 0.045 MB
+        # 03 : 0.081 MB
+        # 04 : 0.114 MB
+    --------------- Coroutine ---------------
+        Total:     381
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      381
+    --------------- Cache ---------------
+        Total: 6
+        Dead:  5
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[10:31:44.951][info] [#0:script/service/service.lua:144]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 9.770 MB
+        # 00 : 9.451 MB
+        # 01 : 0.080 MB
+        # 02 : 0.045 MB
+        # 03 : 0.081 MB
+        # 04 : 0.114 MB
+    --------------- Coroutine ---------------
+        Total:     381
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      381
+    --------------- Cache ---------------
+        Total: 6
+        Dead:  5
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[10:41:45.009][info] [#0:script/service/service.lua:144]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 10.402 MB
+        # 00 : 10.083 MB
+        # 01 : 0.080 MB
+        # 02 : 0.045 MB
+        # 03 : 0.081 MB
+        # 04 : 0.114 MB
+    --------------- Coroutine ---------------
+        Total:     381
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      381
+    --------------- Cache ---------------
+        Total: 6
+        Dead:  5
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[10:51:45.282][info] [#0:script/service/service.lua:144]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 5.867 MB
+        # 00 : 5.547 MB
+        # 01 : 0.080 MB
+        # 02 : 0.045 MB
+        # 03 : 0.081 MB
+        # 04 : 0.114 MB
+    --------------- Coroutine ---------------
+        Total:     0
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      0
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[11:01:45.336][info] [#0:script/service/service.lua:144]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 5.954 MB
+        # 00 : 5.634 MB
+        # 01 : 0.080 MB
+        # 02 : 0.045 MB
+        # 03 : 0.081 MB
+        # 04 : 0.114 MB
+    --------------- Coroutine ---------------
+        Total:     0
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      0
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[11:11:45.388][info] [#0:script/service/service.lua:144]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 6.041 MB
+        # 00 : 5.722 MB
+        # 01 : 0.080 MB
+        # 02 : 0.045 MB
+        # 03 : 0.081 MB
+        # 04 : 0.114 MB
+    --------------- Coroutine ---------------
+        Total:     0
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      0
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[11:21:45.754][info] [#0:script/service/service.lua:144]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 6.129 MB
+        # 00 : 5.810 MB
+        # 01 : 0.080 MB
+        # 02 : 0.045 MB
+        # 03 : 0.081 MB
+        # 04 : 0.114 MB
+    --------------- Coroutine ---------------
+        Total:     0
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      0
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[11:31:45.923][info] [#0:script/service/service.lua:144]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 6.216 MB
+        # 00 : 5.897 MB
+        # 01 : 0.080 MB
+        # 02 : 0.045 MB
+        # 03 : 0.081 MB
+        # 04 : 0.114 MB
+    --------------- Coroutine ---------------
+        Total:     0
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      0
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[11:41:46.073][info] [#0:script/service/service.lua:144]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 6.303 MB
+        # 00 : 5.983 MB
+        # 01 : 0.080 MB
+        # 02 : 0.045 MB
+        # 03 : 0.081 MB
+        # 04 : 0.114 MB
+    --------------- Coroutine ---------------
+        Total:     0
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      0
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[11:51:46.224][info] [#0:script/service/service.lua:144]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 5.844 MB
+        # 00 : 5.525 MB
+        # 01 : 0.080 MB
+        # 02 : 0.045 MB
+        # 03 : 0.081 MB
+        # 04 : 0.114 MB
+    --------------- Coroutine ---------------
+        Total:     0
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      0
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[12:01:46.382][info] [#0:script/service/service.lua:144]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 5.931 MB
+        # 00 : 5.611 MB
+        # 01 : 0.080 MB
+        # 02 : 0.045 MB
+        # 03 : 0.081 MB
+        # 04 : 0.114 MB
+    --------------- Coroutine ---------------
+        Total:     0
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      0
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[12:11:46.433][info] [#0:script/service/service.lua:144]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 6.016 MB
+        # 00 : 5.696 MB
+        # 01 : 0.080 MB
+        # 02 : 0.045 MB
+        # 03 : 0.081 MB
+        # 04 : 0.114 MB
+    --------------- Coroutine ---------------
+        Total:     0
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      0
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[12:21:46.485][info] [#0:script/service/service.lua:144]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 6.099 MB
+        # 00 : 5.779 MB
+        # 01 : 0.080 MB
+        # 02 : 0.045 MB
+        # 03 : 0.081 MB
+        # 04 : 0.114 MB
+    --------------- Coroutine ---------------
+        Total:     0
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      0
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[12:31:46.527][info] [#0:script/service/service.lua:144]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 6.180 MB
+        # 00 : 5.861 MB
+        # 01 : 0.080 MB
+        # 02 : 0.045 MB
+        # 03 : 0.081 MB
+        # 04 : 0.114 MB
+    --------------- Coroutine ---------------
+        Total:     0
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      0
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[12:41:46.988][info] [#0:script/service/service.lua:144]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 6.263 MB
+        # 00 : 5.943 MB
+        # 01 : 0.080 MB
+        # 02 : 0.045 MB
+        # 03 : 0.081 MB
+        # 04 : 0.114 MB
+    --------------- Coroutine ---------------
+        Total:     0
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      0
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[12:51:47.165][info] [#0:script/service/service.lua:144]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 6.344 MB
+        # 00 : 6.024 MB
+        # 01 : 0.080 MB
+        # 02 : 0.045 MB
+        # 03 : 0.081 MB
+        # 04 : 0.114 MB
+    --------------- Coroutine ---------------
+        Total:     0
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      0
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[13:01:47.344][info] [#0:script/service/service.lua:144]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 5.875 MB
+        # 00 : 5.556 MB
+        # 01 : 0.080 MB
+        # 02 : 0.045 MB
+        # 03 : 0.081 MB
+        # 04 : 0.114 MB
+    --------------- Coroutine ---------------
+        Total:     0
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      0
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[13:11:47.509][info] [#0:script/service/service.lua:144]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 5.957 MB
+        # 00 : 5.637 MB
+        # 01 : 0.080 MB
+        # 02 : 0.045 MB
+        # 03 : 0.081 MB
+        # 04 : 0.114 MB
+    --------------- Coroutine ---------------
+        Total:     0
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      0
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[13:21:47.579][info] [#0:script/service/service.lua:144]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 6.037 MB
+        # 00 : 5.718 MB
+        # 01 : 0.080 MB
+        # 02 : 0.045 MB
+        # 03 : 0.081 MB
+        # 04 : 0.114 MB
+    --------------- Coroutine ---------------
+        Total:     0
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      0
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[13:31:47.603][info] [#0:script/service/service.lua:144]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 6.118 MB
+        # 00 : 5.799 MB
+        # 01 : 0.080 MB
+        # 02 : 0.045 MB
+        # 03 : 0.081 MB
+        # 04 : 0.114 MB
+    --------------- Coroutine ---------------
+        Total:     0
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      0
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[13:41:47.934][info] [#0:script/service/service.lua:144]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 6.201 MB
+        # 00 : 5.881 MB
+        # 01 : 0.080 MB
+        # 02 : 0.045 MB
+        # 03 : 0.081 MB
+        # 04 : 0.114 MB
+    --------------- Coroutine ---------------
+        Total:     0
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      0
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[13:51:47.965][info] [#0:script/service/service.lua:144]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 6.281 MB
+        # 00 : 5.961 MB
+        # 01 : 0.080 MB
+        # 02 : 0.045 MB
+        # 03 : 0.081 MB
+        # 04 : 0.114 MB
+    --------------- Coroutine ---------------
+        Total:     0
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      0
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[14:01:48.196][info] [#0:script/service/service.lua:144]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 6.363 MB
+        # 00 : 6.044 MB
+        # 01 : 0.080 MB
+        # 02 : 0.045 MB
+        # 03 : 0.081 MB
+        # 04 : 0.114 MB
+    --------------- Coroutine ---------------
+        Total:     0
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      0
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[14:11:48.356][info] [#0:script/service/service.lua:144]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 5.895 MB
+        # 00 : 5.575 MB
+        # 01 : 0.080 MB
+        # 02 : 0.045 MB
+        # 03 : 0.081 MB
+        # 04 : 0.114 MB
+    --------------- Coroutine ---------------
+        Total:     0
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      0
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[14:21:48.512][info] [#0:script/service/service.lua:144]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 5.975 MB
+        # 00 : 5.656 MB
+        # 01 : 0.080 MB
+        # 02 : 0.045 MB
+        # 03 : 0.081 MB
+        # 04 : 0.114 MB
+    --------------- Coroutine ---------------
+        Total:     0
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      0
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[14:31:48.578][info] [#0:script/service/service.lua:144]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 6.056 MB
+        # 00 : 5.736 MB
+        # 01 : 0.080 MB
+        # 02 : 0.045 MB
+        # 03 : 0.081 MB
+        # 04 : 0.114 MB
+    --------------- Coroutine ---------------
+        Total:     0
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      0
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[14:41:48.834][info] [#0:script/service/service.lua:144]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 6.138 MB
+        # 00 : 5.819 MB
+        # 01 : 0.080 MB
+        # 02 : 0.045 MB
+        # 03 : 0.081 MB
+        # 04 : 0.114 MB
+    --------------- Coroutine ---------------
+        Total:     0
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      0
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[14:51:48.882][info] [#0:script/service/service.lua:144]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 6.219 MB
+        # 00 : 5.899 MB
+        # 01 : 0.080 MB
+        # 02 : 0.045 MB
+        # 03 : 0.081 MB
+        # 04 : 0.114 MB
+    --------------- Coroutine ---------------
+        Total:     0
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      0
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[14:52:21.433][info] [#0:script/provider/diagnostic.lua:557]: Diagnostics scope [file:///home/notrevew/Documents/c], files count:[12]
+[14:52:21.439][info] [#0:script/provider/diagnostic.lua:574]: Diagnostics scope [file:///home/notrevew/Documents/c] finished, takes [0.006] sec.
+[14:52:22.078][info] [#0:script/workspace/workspace.lua:282]: Scan files at:	file:///home/notrevew/Documents/c/c.lua
+[14:52:22.078][info] [#0:script/workspace/workspace.lua:282]: Scan files at:	file:///home/notrevew/Documents/c/c.lua~
+[14:52:22.079][info] [#0:script/workspace/loading.lua:161]: Load files from disk:	file:///home/notrevew/Documents/c/c.lua
+[14:52:22.079][info] [#0:script/workspace/loading.lua:89]: Skip loaded file: file:///home/notrevew/Documents/c/c.lua
+[14:52:22.080][info] [#0:script/workspace/loading.lua:161]: Load files from disk:	file:///home/notrevew/Documents/c/c.lua~
+[14:52:22.080][info] [#0:script/workspace/loading.lua:173]: Loaded files takes [0.000] sec: file:///home/notrevew/Documents/c/c.lua~
+[14:52:22.080][info] [#0:script/workspace/loading.lua:182]: Compile files takes [0.000] sec: file:///home/notrevew/Documents/c/c.lua~
+[14:52:22.080][info] [#0:script/workspace/loading.lua:183]: Loaded finish:	file:///home/notrevew/Documents/c/c.lua~
+[14:52:22.080][info] [#0:script/workspace/loading.lua:173]: Loaded files takes [0.002] sec: file:///home/notrevew/Documents/c/c.lua
+[14:52:22.080][info] [#0:script/workspace/loading.lua:182]: Compile files takes [0.000] sec: file:///home/notrevew/Documents/c/c.lua
+[14:52:22.081][info] [#0:script/workspace/loading.lua:183]: Loaded finish:	file:///home/notrevew/Documents/c/c.lua

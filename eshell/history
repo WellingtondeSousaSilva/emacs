@@ -1,0 +1,18 @@
+ls 
+exit
+pip install python-lsp-server
+pip3 install python-lsp-server
+pip install python-lsp-server
+exit
+ls 
+lua variaveis.lua 
+exit 
+gcc teste.c 
+gcc teste.c -o 
+gcc teste.c -o teste.c
+gcc teste.c -o teste.c
+gcc teste.c 
+gcc teste.c -o teste
+ls 
+teste 
+./teste 
